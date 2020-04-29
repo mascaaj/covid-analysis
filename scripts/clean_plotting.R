@@ -103,6 +103,7 @@ j <- ggplot(databyDate_IN,aes(x=date)) +
   theme(plot.title = element_text(size=14))+ theme(axis.text.x = element_text(size = x_font_size, angle = 45))+ 
   scale_x_date(date_breaks = "2 weeks",date_labels="%b-%d",limits = as.Date(c('2020-03-01',NA)))
 
+#Grid plot of basic plots
 plot_topdown_centralIL <- grid.arrange(a,b,c,d,e,f, 
                                        nrow=2,
                                        top = textGrob(paste("US - Central IL Drill Down ",Sys.Date()),
@@ -118,7 +119,6 @@ plot_country_compare <- grid.arrange(a,g,i,d,h,j,
                                        bottom = textGrob(
                                          "Data Source: nyt open covid 19 dataset, Canada open dataset, india open dataset, see readme for more details",
                                          gp = gpar(fontface = 3, fontsize = 9)))
-# plot(plot_topdown_centralIL)
 
  summary_US <- ggplot(databyDateState_US,aes(x=date)) + 
     geom_line(aes(y=delCases),color="black",size=case_line_size) +

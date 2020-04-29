@@ -11,7 +11,7 @@ results_plot_names <- c("central_il_drilldown.png",
 
 savePlot <- function(saveFolder,plotName,plotData,wid=18,hig=9,dpi=600){
   ggsave(paste(saveFolder,plotName[1],sep="/"), 
-         plot = plotData, # or give ggplot object name as in myPlot,
+         plot = plotData,
          width = wid, height = hig, 
          units = "in", # other options c("in", "cm", "mm"), 
          dpi = dpi)

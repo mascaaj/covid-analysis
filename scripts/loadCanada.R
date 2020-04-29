@@ -2,9 +2,6 @@
 
 library(dplyr)
 
-
-# pathList <- c("../Covid19Canada","../Covid19Canada/timeseries_hr","../Covid19Canada/timeseries_prov")
-
 loadMergeCanadaData <- function(pathToFiles){
   
   files <-c("cases.csv","testing_cumulative.csv",
