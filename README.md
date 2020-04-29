@@ -1,4 +1,4 @@
-#Covid 19 Analysis
+# Covid 19 Analysis
 
 This analysis is intended for personal consumption and is thus tailored so.
 Feel free to submit a pull request if you feel the need to improve upon it.
@@ -15,12 +15,12 @@ The data for this analysis is from 3 different sources :
 
 ## Folder Structure :
 
-Analysis <- scripts reside here. Results might live in this folder.
-Covid19Canada <- this folder gets pulled everyday for upto date information
-covid-19-data <- this folder gets pulled everyday for upto date information
-covid-19-india-data <- this folder gets pulled everyday for upto date information
+- Analysis <- scripts reside here. Results might live in this folder.
+- Covid19Canada <- this folder gets pulled everyday for upto date information
+- covid-19-data <- this folder gets pulled everyday for upto date information
+- covid-19-india-data <- this folder gets pulled everyday for upto date information
 
-##Package Versions:
+## Package Versions:
 
 - R version used : 3.4
 - dplyr : 0.7.4
